@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "author": "Steven Poulton",
+        "name": "{{vm.post.title}}",
+        "datePublished": "{{vm.post.publishDate}}"
+    }
+</script>
+<div ng-if="!vm.loaded" class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<article class='post-detail' ng-class="{loaded: vm.loaded}">
+    <h2>{{vm.post.title}}</h2>
+    <time datetime="{{vm.post.publishDate}}">{{vm.post.publishDate | amDateFormat:'MMMM Do YYYY'}}</time>
+    <section ng-bind-html="vm.post.body | markdown"></section>
+</article>

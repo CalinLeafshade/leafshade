@@ -1,0 +1,31 @@
+{
+  "name": "leafsha.de",
+  "version": "0.0.0",
+  "authors": [
+    "Steven Poulton <poulton.steven@googlemail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.10.6",
+    "angular": "~1.4.8",
+    "angular-markdown-filter": "~1.3.2",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-sanitize": "~1.4.8",
+    "markdown": "~0.5.0",
+    "angular-moment": "~0.10.3",
+    "angular-animate": "~1.4.8"
+  }
+}

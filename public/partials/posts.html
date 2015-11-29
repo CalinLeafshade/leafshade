@@ -1,0 +1,14 @@
+<section class="post-list clearfix" ng-mouseleave="vm.hover(-1)">
+    <div class="post-info" ng-class="{left: vm.left}" ng-show="vm.selected">
+        <h2>
+            {{vm.selected.title}}
+        </h2>
+        <section ng-bind-html="vm.selected.body | cut:true:300:' ...' | markdown">
+        </section>
+    </div>
+    <article class="post-thumb repeat-animation" ng-mouseover="vm.hover($index)" ng-repeat="post in vm.posts">
+        <a href="#/posts/{{post.id}}">
+            <img src="{{post.thumbnail}}" />
+        </a>
+    </article>
+</section>
